@@ -1,0 +1,172 @@
+@media screen and (max-width:768px) {
+    .hamburger{
+        z-index: 2;
+        
+    }
+    .logo{
+        /* display: none; */
+    }
+    .line{
+        cursor: pointer;
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: #000;
+    }
+    nav{
+        justify-content: space-between;
+        /* height: 100vh; */
+    }
+    .nav-links{
+      height: 120vh;
+      width: 110%;
+      background-color: #939899;
+      flex-direction: column;
+      top: 10rem;
+      /* display: flex; */
+      margin-top: -15rem;
+      margin-left: -4rem;
+      align-items: center;
+      position: fixed;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li a{
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+        margin-top: 19rem;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade{
+        opacity: 1;
+    }
+   /* section  */
+   .form {
+    left: 12rem;
+    flex-direction: column;
+   }
+   .main-img{
+    display: none;
+    width: 40rem;
+    height: 40rem;
+    margin: 6rem 0 0 0;
+   }
+   aside{
+    margin-left: -4rem;
+   }
+}
+@media screen and (max-width: 480px) and (min-width:320px){
+    .form{
+        left: 3rem;
+        top: 9rem;
+        width: 85%;
+        height: 85vh;
+    }
+    .form input, .btn{
+        width: 90% !important;
+        margin-left: 6rem;
+    }
+    label{
+        margin-left: 6rem;
+    }
+    h1{
+        font-size: 2rem;
+        margin-left: 8rem;
+        white-space: nowrap;
+        margin-top: 5rem !important;
+    }
+    h3{
+        white-space: nowrap;
+        margin: 1rem 0 1rem 9rem;
+    }
+    h4{
+        margin-left: -0.5rem;
+    }
+}
+    @media screen and (max-width: 375px) {
+        .form{
+            left: 2rem;
+            top: 9rem;
+            width: 90%;
+            height: 90vh;
+        }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        height: 125vh;
+    }
+    .form{
+        left: 3rem;
+        top: 9rem;
+        width: 85%;
+        height: 100vh;
+    }
+    .form input, .btn{
+        width: 75% !important;
+        margin-left: 8rem;
+    }
+    .btn{
+        height: -1rem;
+        margin-top: 1.5rem;
+    }
+    label{
+        margin-left: 8.5rem;
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 1.8rem;
+        margin-left: 9rem;
+        white-space: nowrap;
+        margin-top: 6rem !important;
+    }
+    h3{
+        white-space: nowrap;
+        margin: 1rem 0 1rem 9rem;
+    }
+    h4{
+        white-space: nowrap;    
+        font-size: 2.2rem;
+        margin-left: -2.5rem;
+    }
+}
+
+@media only screen and (max-width:1270px) and (min-width:800px){
+    .form{
+        width: 90% !important;
+        height: 65vh;
+        left: 5rem !important;
+        top: 20rem;
+        padding: 5rem 5rem 5rem 7rem;
+    }
+    .form input, .btn{
+        width: 110% !important;
+    }
+    .main-img{
+       height: 77rem;
+       width: 68%;
+       background-size: cover;  
+    }
+    aside{
+        margin-left: -1.9rem;
+    }
+    h1{
+        white-space: nowrap;
+        font-size: 2.5rem;
+    }
+}
